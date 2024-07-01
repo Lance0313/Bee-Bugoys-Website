@@ -135,6 +135,55 @@ header .shopping span{
 	    height: 15vw;
     object-fit: cover;
 }
+nav{
+  position: fixed;
+  background: #FEBE00;
+  width: 100%;
+  padding: 0px 5px;
+  z-index: 12;
+
+}
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .title a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 2vw;
+  font-weight: 600;
+}
+.menu .navtabs{
+  display: inline-flex;
+}
+.menu .navtabs li{
+  list-style: none;
+  margin-left: 7px;
+}
+.menu .navtabs li:first-child{
+  margin-left: 0px;
+}
+.menu .navtabs li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1vw;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5vw;
+  transition: all 0.3s ease;
+}
+.menu .navtabs li a:hover{
+  background-color: #1b1b1b;
+  color: #fff;
+}
+.menu .navtabs li a.active{
+  background-color: #1b1b1b;
+  color:#fff;
+}
 @media (max-width: 800px) {
   .navbar {
       flex-direction: column;
